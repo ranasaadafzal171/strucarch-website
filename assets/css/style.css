@@ -48,6 +48,39 @@ a:hover { color: var(--primary-dark); }
 .topbar .container { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .topbar a { color: #f7e8e4; font-weight: 600; }
 .topbar .tb-right { display: flex; gap: 18px; align-items: center; }
+.badge-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ---------- Trust Banner Strip ---------- */
+.trust-banner-strip {
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  padding: 10px 0;
+  font-size: 0.85rem;
+}
+.trust-strip-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.verify-link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.verify-link:hover {
+  color: #fff;
+}
 
 /* ---------- Header ---------- */
 .site-header {
@@ -94,6 +127,8 @@ a:hover { color: var(--primary-dark); }
 .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
 .btn-white { background: #fff; color: var(--ink); }
 .btn-white:hover { background: var(--primary-soft); color: var(--primary); }
+.btn-gold { background: var(--accent-gold); color: var(--dark); border-color: var(--accent-gold); }
+.btn-gold:hover { background: #c9a227; color: var(--dark); }
 .btn-sm { padding: 9px 16px; font-size: 0.85rem; }
 
 /* ---------- Hero ---------- */
@@ -116,6 +151,11 @@ a:hover { color: var(--primary-dark); }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 .hero-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
 .cred { border: 1px solid var(--border); background: #fff; border-radius: 8px; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; color: var(--ink); }
+.cred-pec { border-color: var(--primary); color: var(--primary); }
+.cred-iep { border-color: #0066cc; color: #0066cc; }
+.cred-pmp { border-color: #009999; color: #009999; }
+.cred-leed { border-color: #009900; color: #009900; }
+.cred-uet { border-color: #660066; color: #660066; }
 
 .hero-card {
   background: #fff; border-radius: 18px; box-shadow: var(--shadow-lg);
@@ -129,6 +169,39 @@ a:hover { color: var(--primary-dark); }
 .stat-row .l { font-size: 0.85rem; color: var(--ink-soft); text-align: right; }
 .hero-card .hc-foot { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--ink-soft); display: flex; justify-content: space-between; }
 .hc-foot b { color: var(--ink); }
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.asian-regions-bar {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.arb-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+  display: block;
+}
+.arb-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.arb-chip {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--bg-soft);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
 
 /* ---------- Sections ---------- */
 .section { padding: 84px 0; }
