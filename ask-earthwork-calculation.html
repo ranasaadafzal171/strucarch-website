@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Calculate Earthwork Quantities - Average End Area | Struc-Arch</title>
+<meta name="description" content="How to calculate earthwork cut and fill quantities using the average end area method - the formula, a worked 100 metre example, cross-section spacing and compaction shrinkage.">
+<link rel="canonical" href="https://strucarch.com/ask-earthwork-calculation.html">
+<meta name="keywords" content="earthwork calculation, cut and fill quantity, average end area method, earthwork formula road, compaction shrinkage, cross section area volume">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Struc-Arch Pakistan">
+<meta property="og:title" content="How to Calculate Earthwork Quantities">
+<meta property="og:description" content="The average end area method explained - formula, worked example, section spacing and compaction shrinkage.">
+<meta property="og:url" content="https://strucarch.com/ask-earthwork-calculation.html">
+<meta property="og:image" content="https://strucarch.com/assets/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Earthwork Calculation | Struc-Arch">
+<meta name="twitter:description" content="Average end area method for cut and fill quantities - formula and worked example.">
+<meta name="twitter:image" content="https://strucarch.com/assets/img/og-default.png">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/tools.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://strucarch.com/ask-earthwork-calculation.html#article",
+      "headline": "How to Calculate Earthwork Quantities",
+      "url": "https://strucarch.com/ask-earthwork-calculation.html",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://strucarch.com/knowledge.html"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Cut and fill earthwork quantity calculation by the average end area method for roads and sites"
+      },
+      "description": "How to calculate earthwork cut and fill quantities using the average end area method - the formula, a worked 100 metre example, cross-section spacing and compaction shrinkage.",
+      "author": {
+        "@type": "Person",
+        "name": "Saad Afzal",
+        "jobTitle": "Founder & Principal Structural Engineer",
+        "url": "https://strucarch.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Struc-Arch Pakistan",
+        "url": "https://strucarch.com"
+      },
+      "datePublished": "2026-08-10",
+      "dateModified": "2026-08-10",
+      "mainEntityOfPage": "https://strucarch.com/ask-earthwork-calculation.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://strucarch.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Knowledge",
+          "item": "https://strucarch.com/knowledge.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Earthwork Calculation",
+          "item": "https://strucarch.com/ask-earthwork-calculation.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between cut and fill?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cut is soil excavated to bring the ground down to the design level. Fill is soil placed (compacted) to bring the ground up. Good design balances cut and fill so excavated soil is reused instead of imported or wasted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is earthwork paid per cubic metre when I also pay for loading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The BOQ rate for earthwork is a composite rate: it should cover excavation or placing, spreading, watering and compaction. The measured quantity is the geometric volume; the rate carries the cost of doing the work - which is why rate analysis matters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does soil shrink when compacted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typical compaction shrink for common fill is 10-15%: 1.0 m³ of loose soil compacts to about 0.85-0.90 m³. Sand behaves differently from clay, and rocky fills may swell when excavated. The contract usually specifies whether quantities are measured as compacted volume."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div>PMP &middot; LEED Green Associate &middot; Civil &amp; Structural Engineer - Gujranwala, Pakistan</div>
+    <div class="tb-right">
+      <a href="tel:03103330023">0310 3330023</a>
+      <a href="https://strucarch.com" target="_blank" rel="noopener">strucarch.com</a>
+      <a href="https://strucarchpakistan.com" target="_blank" rel="noopener">strucarchpakistan.com</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="assets/img/logoo.png" alt="Struc-Arch Pakistan">
+      <span>
+        <span class="brand-name">Struc-<span>Arch</span> Pakistan</span><br>
+        <span class="brand-sub">Portfolio &middot; Saad Afzal</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contractor-billing.html">Contractor Billing</a></li>
+        <li><a href="projects.html">Projects</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="about.html">About</a></li>
+          <li class="has-menu"><a href="knowledge.html">Knowledge</a>
+            <div class="nav-drop">
+              <a href="knowledge.html">Knowledge Hub</a>
+              <a href="knowledge-structural.html">Structural Engineering</a>
+              <a href="knowledge-civil.html">Civil Engineering</a>
+              <a href="knowledge-contracts.html">Construction Contracts</a>
+              <a href="knowledge-construction.html">Construction Practice</a>
+              <a href="knowledge-glossary.html">Glossary</a>
+            </div>
+          </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-cta" href="contact.html">Start a Project</a>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="knowledge.html">Knowledge</a> &nbsp;/&nbsp; Earthwork Calculation</div>
+    <h1>How to Calculate Earthwork Quantities?</h1>
+    <p>Earthwork is measured as volumes of cut (excavation) and fill (embankment). The workhorse method is average end area: multiply the distance between two cross-sections by the average of their areas.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:44px;">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">Civil &amp; Earthwork</span>
+      <h2>How earthwork volumes are measured</h2>
+    </div>
+    <p style="text-align:center; max-width:820px; margin:0 auto 26px;">Survey the ground at intervals, compute the cross-section areas, and connect the dots with a volume formula. The accuracy depends far more on the survey spacing than on the formula.</p>
+
+    <div class="service-card" style="text-align:left;">
+      <h3>Step 1 - Take cross-sections</h3>
+      <p>The site or road is surveyed along its centreline, with <strong>cross-sections taken at regular intervals</strong> - commonly every 20 m or 50 m, and closer at changes in grade. Each cross-section shows the existing ground and the design level; the area between them is the cut (above design) or fill (below design) at that section.</p>
+    </div>
+
+    <div class="service-card" style="text-align:left;">
+      <h3>Step 2 - Compute each section area</h3>
+      <p>The cross-section is split into trapezoids or triangles and the <strong>area of cut and of fill</strong> is computed for each section, usually in m&sup2;. Typical road sections give a central fill with side drains in cut - so cut and fill are often computed separately per section.</p>
+    </div>
+
+    <div class="service-card" style="text-align:left;">
+      <h3>The average end area formula</h3>
+      <p style="text-align:center;"><span class="tag">V = L &times; (A&#8321; + A&#8322;) / 2</span></p><p>where L is the distance between two sections, and A&#8321;, A&#8322; are the areas of cut (or fill) at the two sections. The more precise <strong>prismoidal</strong> formula is used for accuracy on large or expensive works:</p><p style="text-align:center;"><span class="tag">V = L/6 &times; (A&#8321; + 4A&#7699; + A&#8322;)</span></p><p>where A&#7699; is the area at the mid-section.</p>
+    </div>
+
+    <div class="service-card" style="text-align:left;">
+      <h3>Worked example</h3>
+      <p>You are measuring a 100 m length of embankment. At the start section the fill area is <strong>12 m&sup2;</strong>; at the end section it is <strong>16 m&sup2;</strong>:</p><p><span class="tag">V = 100 &times; (12 + 16) / 2 = 100 &times; 14 = 1,400 m&sup3;</span></p><p>So <strong>1,400 m&sup3; of compacted fill</strong> over this 100 m length. Repeat section by section and sum - that is the contract quantity.</p>
+    </div>
+
+    <div class="service-card" style="text-align:left;">
+      <h3>Compaction and shrinkage - the part everyone forgets</h3>
+      <p>The volume computed from sections is usually the <strong>compacted (in-place) volume</strong>. Loose soil brought in shrinks roughly <strong>10-15%</strong> when compacted, so to place 1,400 m&sup3; of compacted fill you must import about <strong>1,550-1,650 m&sup3; of loose material</strong>. Rock swell can run 30% or more. Contracts measure earthwork in the ground; the import quantity is a different, commercial number.</p>
+    </div>
+
+    <div class="service-card" style="text-align:left;">
+      <h3>Common mistakes</h3>
+      <ul class="check-list" style="margin-top:6px;"><li>Applying the average of a single section pair over a very long chainage - take sections close enough that the ground does not change shape between them.</li><li>Netting cut and fill against each other when the contract requires them measured separately.</li><li>Ignoring shrinkage/swell when ordering material.</li><li>Mixing m&sup2; (area) and m&sup3; (volume) in the bill.</li></ul>
+    </div>
+
+    <div class="service-card" style="text-align:left;">
+      <h3>Standards that apply</h3>
+      <p>Earthwork is measured under the contract method of measurement (FIDIC-based, PEC forms or highway department specifications) - always state cut and fill separately and exclude topsoil stripping where the spec requires it. Try the built-in <a href="tools.html">earthwork calculator</a> on the tools page to check a run of sections quickly.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:8px;">Frequently Asked Questions</h2>
+    <p style="text-align:center; color:var(--ink-soft); margin-bottom:30px;">Common questions about earthwork measurement.</p>
+    <div class="faq-list" style="margin:0 auto;">
+      <div class="faq-item">
+        <h3>What is the difference between cut and fill?</h3>
+        <p>Cut is soil excavated to bring the ground down to the design level. Fill is soil placed (compacted) to bring the ground up. Good design balances cut and fill so excavated soil is reused instead of imported or wasted.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why is earthwork paid per cubic metre when I also pay for loading?</h3>
+        <p>The BOQ rate for earthwork is a composite rate: it should cover excavation or placing, spreading, watering and compaction. The measured quantity is the geometric volume; the rate carries the cost of doing the work - which is why rate analysis matters.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much does soil shrink when compacted?</h3>
+        <p>Typical compaction shrink for common fill is 10-15%: 1.0 m³ of loose soil compacts to about 0.85-0.90 m³. Sand behaves differently from clay, and rocky fills may swell when excavated. The contract usually specifies whether quantities are measured as compacted volume.</p>
+      </div>
+    </div>
+    <p style="margin-top:24px; text-align:center; color:var(--ink-soft);">Related: <a href="tools.html">earthwork calculator &amp; construction tools</a> &middot; <a href="ask-cement-1000sqft.html">concrete quantities</a> &middot; <a href="knowledge-civil.html">civil engineering knowledge</a> &middot; more in the <a href="knowledge.html">knowledge base</a>.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Need earthwork quantities measured for a contract?</h2>
+        <p>Struc-Arch prepares cross-sections, earthwork calculations and measurement sheets for roads, sites and embankments.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-white" href="contact.html">Get an Estimate</a>
+        <a class="btn btn-outline" href="quantity-surveying.html" style="background:transparent;color:#fff;border-color:rgba(255,255,255,0.35);">Quantity Surveying</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html" style="color:#fff">
+          <img class="brand-logo" src="assets/img/logoo.png" alt="Struc-Arch Pakistan">
+          <span>
+            <span class="brand-name" style="color:#fff">Struc-<span style="color:#e2a79c">Arch</span> Pakistan</span><br>
+            <span class="brand-sub" style="color:#cba49d">Structure &amp; Architecture</span>
+          </span>
+        </a>
+        <p style="margin-top:16px; font-size:0.94rem;">Civil &amp; structural engineering consultancy - design, estimation, certification and project management across Pakistan and internationally.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="knowledge.html">Knowledge</a></li>
+          <li><a href="knowledge-glossary.html">Glossary</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+          <li><a href="local-gujranwala.html">Gujranwala &amp; Punjab</a></li>
+          <li><a href="local-pakistan.html">All Locations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Saad Afzal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="structural-engineering.html">Structural Engineering</a></li>
+          <li><a href="quantity-surveying.html">Quantity Surveying</a></li>
+          <li><a href="boq-estimation.html">BOQ &amp; Cost Estimation</a></li>
+          <li><a href="building-fitness.html">Building Fitness Certification</a></li>
+          <li><a href="claims-eot.html">Construction Claims &amp; EOT</a></li>
+          <li><a href="contractor-billing.html">Contractor Billing &amp; IPC</a></li>
+          <li><a href="construction-supervision.html">Supervision &amp; Project Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> <a href="https://www.google.com/maps?cid=9445766861951528783" target="_blank" rel="noopener">Kacha, Eminabad Road, Gujranwala 52250</a></p>
+        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg> 0310 3330023</p>
+        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg> info@strucarch.com</p>
+        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg> info@strucarchpakistan.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Struc-Arch Pakistan. All rights reserved.</span>
+      <span><a href="https://strucarch.com" target="_blank" rel="noopener">strucarch.com</a> &nbsp;&middot;&nbsp; <a href="https://strucarchpakistan.com" target="_blank" rel="noopener">strucarchpakistan.com</a> &nbsp;&middot;&nbsp; <a href="https://strucarchpakistan.com/portal/verification" target="_blank" rel="noopener">Verification Portal</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

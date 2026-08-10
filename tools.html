@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Engineering Calculators &amp; Tools - Struc-Arch Pakistan</title>
+<meta name="description" content="Free online engineering calculators and tools for civil and structural engineers - unit converter, concrete mix calculator, rebar weight calculator, beam calculator, slope converter, drawing scale converter, section properties and more. No download, no sign-up.">
+<link rel="canonical" href="https://strucarch.com/tools.html">
+<meta name="keywords" content="free engineering calculator, concrete calculator, steel weight calculator, unit converter civil engineering, BOQ calculator, Struc-Arch tools">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Struc-Arch Pakistan">
+<meta property="og:title" content="Free Engineering Calculators & Tools - Struc-Arch Pakistan">
+<meta property="og:description" content="Free online engineering calculators for civil and structural engineers - unit converter, concrete mix, rebar weight, beam analysis, slope conversion, section properties. No sign-up.">
+<meta property="og:url" content="https://strucarch.com/tools.html">
+<meta property="og:image" content="https://strucarch.com/assets/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Engineering Calculators & Tools - Struc-Arch Pakistan">
+<meta name="twitter:description" content="Free online engineering calculators - unit converter, concrete mix, rebar weight, beam analysis and more.">
+<meta name="twitter:image" content="https://strucarch.com/assets/img/og-default.png">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/tools.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Struc-Arch Free Engineering Tools",
+  "url": "https://strucarch.com/tools.html",
+  "description": "Free online engineering calculators for civil and structural engineers - unit converter, concrete mix, rebar weight, beam analysis, slope conversion, earthwork, brick, plaster, asphalt, aggregate and sand, rate analysis and more.",
+  "applicationCategory": "EngineeringApplication",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": {
+    "@type": "Organization",
+    "name": "Struc-Arch Pakistan",
+    "url": "https://strucarch.com"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://strucarch.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Engineering Tools", "item": "https://strucarch.com/tools.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many cement bags are in 1 m³ of M15 (1:2:4) concrete?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 6.9 bags of 50 kg each (dry volume allowance 1.54, 5% waste)." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a 12 mm rebar weigh per metre?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Approximately 0.888 kg/m (using d²/162, where d is in mm)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these engineering calculators free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - 100% free, no sign-up, and everything runs in the browser. No files are uploaded anywhere." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use these results for final design?",
+      "acceptedAnswer": { "@type": "Answer", "text": "These are reference and preliminary tools. Final structural design must follow applicable codes and be checked by a licensed engineer." }
+    },
+    {
+      "@type": "Question",
+      "name": "How is earthwork volume measured for roads?",
+      "acceptedAnswer": { "@type": "Answer", "text": "By cross-section. Each station gets a measured cross-section showing cut and fill areas; volume between adjacent sections uses the average end area method (V = L x (A1 + A2) / 2). Compacted fill shrinks, so the loose material needed is higher than the compacted volume." }
+    },
+    {
+      "@type": "Question",
+      "name": "How many bricks are in one m³ of brickwork?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 500 for Pakistani standard bricks (9\" x 4.5\" x 3\") with mortar joints, plus 0.3 m³ of mortar. A 9\" wall needs roughly 115 bricks per square metre of wall face (about 57 for a 4.5\" half-brick wall)." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much plaster covers a 50 kg bag of cement?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 11 m² at 12 mm thick with a 1:4 mix, and roughly 7 m² at 19 mm." }
+    },
+    {
+      "@type": "Question",
+      "name": "How is asphalt quantity ordered for a road?",
+      "acceptedAnswer": { "@type": "Answer", "text": "By tonne. Multiply the compacted volume by the asphalt density (about 2,350 kg/m³) and add 4-8% for wastage and overlaps. A 100 m² driveway at 50 mm needs roughly 12 tonnes." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much crush and sand are needed for 1 m³ of concrete?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For 1:2:4 concrete, the dry material volume is about 1.54 m³ per m³ of concrete. Of that, cement is 1/7, sand 2/7 and crush 4/7, so roughly 0.44 m³ of sand and 0.88 m³ of crush per m³ of concrete before wastage." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is rate analysis in construction?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Rate analysis breaks a BOQ item into its material, labour and plant costs, adds overhead and profit, and divides by the quantity to justify a unit rate. It is the standard way to price extra and non-schedule items in Pakistan." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much steel is used per m³ of concrete?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reference contents are roughly 70-110 kg/m³ for slabs, 120-180 kg/m³ for beams, 150-220 kg/m³ for columns and 60-100 kg/m³ for footings. Actual values depend on design loads, spans and detailing." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div>PMP · LEED Green Associate · Civil &amp; Structural Engineer - Gujranwala, Pakistan</div>
+    <div class="tb-right">
+      <a href="tel:03103330023">0310 3330023</a>
+      <a href="https://strucarch.com" target="_blank" rel="noopener">strucarch.com</a>
+      <a href="https://strucarchpakistan.com" target="_blank" rel="noopener">strucarchpakistan.com</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="assets/img/logoo.png" alt="Struc-Arch Pakistan">
+      <span>
+        <span class="brand-name">Struc-<span>Arch</span> Pakistan</span><br>
+        <span class="brand-sub">Portfolio · Saad Afzal</span>
+      </span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contractor-billing.html">Contractor Billing</a></li>
+        <li><a href="projects.html">Projects</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="about.html">About</a></li>
+          <li class="has-menu"><a href="knowledge.html">Knowledge</a>
+            <div class="nav-drop">
+              <a href="knowledge.html">Knowledge Hub</a>
+              <a href="knowledge-structural.html">Structural Engineering</a>
+              <a href="knowledge-civil.html">Civil Engineering</a>
+              <a href="knowledge-contracts.html">Construction Contracts</a>
+              <a href="knowledge-construction.html">Construction Practice</a>
+              <a href="knowledge-glossary.html">Glossary</a>
+            </div>
+          </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm btn-cta" href="contact.html">Start a Project</a>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Tools</div>
+    <h1>Free Engineering Calculators &amp; Tools</h1>
+    <p>Everyday calculators for civil and structural engineering practice - unit conversion, concrete mixes, rebar weights, beam analysis, slopes and drawing scales. Free, runs entirely in your browser, no sign-up.</p>
+  </div>
+</section>
+
+<div class="section" style="padding-top:34px;">
+  <div class="container">
+
+    <div class="tool-nav">
+      <a href="#unit-converter">Unit Converter</a>
+      <a href="#concrete-mix">Concrete Mix</a>
+      <a href="#rebar-weight">Rebar Weight</a>
+      <a href="#beam-calculator">Beam Calculator</a>
+      <a href="#concrete-volume">Concrete Volume</a>
+      <a href="#slope-converter">Slope Converter</a>
+      <a href="#scale-converter">Scale Converter</a>
+      <a href="#section-properties">Section Properties</a>
+      <a href="#steel-quantity">Steel Quantity</a>
+      <a href="#ramp-slope">Ramp Slope</a>
+      <a href="#earthwork-volume">Earthwork Volume</a>
+      <a href="#brick-quantity">Brick Quantity</a>
+      <a href="#plaster-quantity">Plaster Quantity</a>
+      <a href="#asphalt-quantity">Asphalt Quantity</a>
+      <a href="#aggregate-quantity">Aggregate &amp; Sand</a>
+      <a href="#rate-analysis">Rate Analysis</a>
+      <a href="#rebar-estimator">Rebar by Member</a>
+    </div>
+
+    <div class="t-note t-note-top">
+      Reference tools for preliminary design and site work. Always verify final design with a qualified engineer - the team at <a href="contact.html">Struc-Arch Pakistan</a> can help.
+    </div>
+
+    <!-- ============ UNIT CONVERTER ============ -->
+    <div class="tool-card" id="unit-converter">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg></div>
+        <div>
+          <h3>Engineering Unit Converter</h3>
+          <p>Convert between SI, imperial and local units used in engineering - length, area, volume, force, pressure/stress, bending moment, mass, speed and temperature. Includes marla / kanal land units.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field">
+                <label for="uc-cat">Category</label>
+                <select id="uc-cat"></select>
+              </div>
+            </div>
+            <div class="t-row">
+              <div class="t-field">
+                <label for="uc-from">From</label>
+                <select id="uc-from"></select>
+              </div>
+              <div class="t-field">
+                <label for="uc-to">To</label>
+                <select id="uc-to"></select>
+              </div>
+            </div>
+            <div class="t-row">
+              <div class="t-field">
+                <label for="uc-value">Value</label>
+                <input type="number" id="uc-value" value="1" step="any">
+              </div>
+            </div>
+            <div class="t-row t-actions">
+              <button type="button" class="btn btn-outline btn-sm" id="uc-swap">&#8646; Swap units</button>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-result-big" id="uc-out">1</div>
+            <div class="t-result-label" id="uc-out-label">unit</div>
+            <div class="t-note" id="uc-note">1 unit = 1 unit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ CONCRETE MIX ============ -->
+    <div class="tool-card" id="concrete-mix">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v18"/><path d="M10 3v18"/><path d="M14 3v18"/><path d="M3 8h18"/><path d="M3 16h18"/></svg></div>
+        <div>
+          <h3>Concrete Mix Calculator</h3>
+          <p>Cement, sand and aggregate quantities for nominal mixes (M10 to M25) by the standard dry-volume method - reported in bags, cft and m&sup3; with a water estimate.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field">
+                <label for="mix-grade">Mix / grade</label>
+                <select id="mix-grade">
+                  <option value="1:2:4" selected>M15 - 1:2:4</option>
+                  <option value="1:1.5:3">M20 - 1:1.5:3</option>
+                  <option value="1:1:2">M25 - 1:1:2</option>
+                  <option value="1:3:6">M10 - 1:3:6</option>
+                  <option value="1:4:8">M7.5 - 1:4:8</option>
+                  <option value="1:5:10">M5 - 1:5:10</option>
+                  <option value="custom">Custom ratio</option>
+                </select>
+              </div>
+            </div>
+            <div class="t-row" id="mix-custom-row" style="display:none;">
+                <div class="t-field"><label for="mix-c">Cement (parts)</label><input type="number" id="mix-c" value="1" min="0" step="any"></div>
+                <div class="t-field"><label for="mix-s">Sand (parts)</label><input type="number" id="mix-s" value="2" min="0" step="any"></div>
+                <div class="t-field"><label for="mix-a">Aggregate (parts)</label><input type="number" id="mix-a" value="4" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field">
+                <label for="mix-vol">Wet volume</label>
+                <input type="number" id="mix-vol" value="1" min="0" step="any">
+              </div>
+              <div class="t-field">
+                <label for="mix-vol-unit">Volume unit</label>
+                <select id="mix-vol-unit"><option value="m3" selected>m&sup3;</option><option value="ft3">ft&sup3; (cft)</option></select>
+              </div>
+              <div class="t-field">
+                <label for="mix-waste">Waste factor (%)</label>
+                <input type="number" id="mix-waste" value="5" min="0" step="any">
+              </div>
+            </div>
+            <div class="t-row">
+              <div class="t-field">
+                <label for="mix-wcr">Water-cement ratio</label>
+                <input type="number" id="mix-wcr" value="0.5" min="0" step="any">
+              </div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="mix-out"></div>
+            <div class="t-note">Dry volume = wet volume &times; 1.54 (standard allowance). 1 bag = 50 kg.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ REBAR WEIGHT ============ -->
+    <div class="tool-card" id="rebar-weight">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16"/><path d="M4 14h16"/><path d="M8 4v16"/><path d="M16 4v16"/><circle cx="8" cy="10" r="1.5" fill="currentColor" stroke="none"/><circle cx="16" cy="14" r="1.5" fill="currentColor" stroke="none"/></svg></div>
+        <div>
+          <h3>Rebar Weight Calculator</h3>
+          <p>Steel weight for metric and US rebar sizes by length or by weight. Standard per-metre weights are shown in the quick table.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field">
+                <label for="rb-size">Bar size</label>
+                <select id="rb-size"></select>
+              </div>
+            </div>
+            <div class="t-row">
+              <div class="t-field">
+                <label for="rb-mode">Calculate by</label>
+                <select id="rb-mode"><option value="length" selected>Length</option><option value="weight">Weight</option></select>
+              </div>
+              <div class="t-field">
+                <label for="rb-length">Length (m)</label>
+                <input type="number" id="rb-length" value="12" min="0" step="any">
+              </div>
+              <div class="t-field" style="display:none;">
+                <label for="rb-weight">Weight (kg)</label>
+                <input type="number" id="rb-weight" value="0" min="0" step="any">
+              </div>
+            </div>
+            <div class="t-row">
+              <div class="t-field">
+                <label for="rb-qty">Number of bars</label>
+                <input type="number" id="rb-qty" value="1" min="0" step="any">
+              </div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-result-big" id="rb-out">0</div>
+            <div class="t-result-label" id="rb-out-label">kg</div>
+            <div class="t-note">Weight/m&sup2; of bar (mm) = d&sup2; / 162. Steel density 7,850 kg/m&sup3;.</div>
+            <div class="t-table" id="rb-table"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BEAM CALCULATOR ============ -->
+    <div class="tool-card" id="beam-calculator">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16h18"/><path d="M3 16a2 2 0 0 0 2-2v-4a2 2 0 0 1 4 0v4"/><path d="M13 16a2 2 0 0 0 2-2V8a2 2 0 0 1 4 0v8"/></svg></div>
+        <div>
+          <h3>Simply Supported Beam Calculator</h3>
+          <p>Maximum moment, shear and deflection for a simply supported beam under a uniformly distributed load (UDL) and / or a central point load.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="bm-span">Span, L (m)</label><input type="number" id="bm-span" value="4" min="0" step="any"></div>
+              <div class="t-field"><label for="bm-udl">UDL, w (kN/m)</label><input type="number" id="bm-udl" value="20" min="0" step="any"></div>
+              <div class="t-field"><label for="bm-point">Point load, P (kN)</label><input type="number" id="bm-point" value="0" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="bm-e">Elastic modulus, E (MPa)</label><input type="number" id="bm-e" value="25000" min="0" step="any"></div>
+              <div class="t-field"><label for="bm-i">Moment of inertia, I (mm&sup4;)</label><input type="number" id="bm-i" value="533000000" min="0" step="any"></div>
+            </div>
+            <div class="t-row t-actions">
+              <button type="button" class="btn btn-outline btn-sm" id="bm-preset">Use common presets</button>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid t-out-2" id="bm-out"></div>
+            <div class="t-note">Mmax = wL&sup2;/8 + PL/4 &nbsp;·&nbsp; Vmax = wL/2 + P/2 &nbsp;·&nbsp; &delta;max = 5wL&sup4;/384EI + PL&sup3;/48EI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ CONCRETE VOLUME ============ -->
+    <div class="tool-card" id="concrete-volume">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg></div>
+        <div>
+          <h3>Concrete Volume Calculator</h3>
+          <p>Volumes for slabs, beams, columns, walls and footings with an instant cement-bag estimate at a 1:2:4 (M15) mix.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field">
+                <label for="cv-shape">Member</label>
+                <select id="cv-shape">
+                  <option value="slab">Slab / pavement</option>
+                  <option value="beam">Beam (rectangular)</option>
+                  <option value="column">Column (rectangular)</option>
+                  <option value="wall">Wall / retaining wall</option>
+                  <option value="footing">Square footing</option>
+                  <option value="ccolumn">Column (circular)</option>
+                  <option value="cfooting">Circular footing / column cap</option>
+                </select>
+              </div>
+            </div>
+            <div class="t-row" id="cv-lwh">
+              <div class="t-field"><label for="cv-l">Length (m)</label><input type="number" id="cv-l" value="4" min="0" step="any"></div>
+              <div class="t-field"><label for="cv-w">Width (m)</label><input type="number" id="cv-w" value="3" min="0" step="any"></div>
+              <div class="t-field"><label for="cv-h">Thickness / height (m)</label><input type="number" id="cv-h" value="0.15" min="0" step="any"></div>
+            </div>
+            <div class="t-row" id="cv-dia" style="display:none;">
+              <div class="t-field"><label for="cv-d">Diameter (m)</label><input type="number" id="cv-d" value="0.6" min="0" step="any"></div>
+              <div class="t-field"><label for="cv-hd">Height (m)</label><input type="number" id="cv-hd" value="3" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="cv-qty">Number of members</label><input type="number" id="cv-qty" value="1" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="cv-out"></div>
+            <div class="t-note">Cement estimate shown for a 1:2:4 (M15) mix, 5% waste.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SLOPE CONVERTER ============ -->
+    <div class="tool-card" id="slope-converter">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20L20 4"/><path d="M3 20h18"/><path d="M15 6l3 3"/></svg></div>
+        <div>
+          <h3>Slope / Gradient Converter</h3>
+          <p>Convert road, ramp and drainage gradients between percent (%), degrees and 1:X ratios. Also computes slope from rise and run.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="sl-in-mode">Input as</label>
+                <select id="sl-in-mode">
+                  <option value="pct" selected>Percent (%)</option>
+                  <option value="deg">Degrees (&deg;)</option>
+                  <option value="ratio">Ratio 1:X</option>
+                  <option value="rise">Rise + run</option>
+                </select>
+              </div>
+            </div>
+            <div class="t-row" id="sl-row-single">
+              <div class="t-field"><label for="sl-val">Value</label><input type="number" id="sl-val" value="5" step="any"></div>
+            </div>
+            <div class="t-row" id="sl-row-rise" style="display:none;">
+              <div class="t-field"><label for="sl-rise">Rise / vertical (m)</label><input type="number" id="sl-rise" value="1" min="0" step="any"></div>
+              <div class="t-field"><label for="sl-run">Run / horizontal (m)</label><input type="number" id="sl-run" value="20" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid t-out-4" id="sl-out"></div>
+            <div class="t-note">percent = tan(deg) &times; 100 &nbsp;·&nbsp; 1:X ratio, X = 100 / percent</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SCALE CONVERTER ============ -->
+    <div class="tool-card" id="scale-converter">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7l7-4 7 4"/><path d="M5 7v14"/><path d="M19 7v14"/><path d="M5 21h14"/></svg></div>
+        <div>
+          <h3>Drawing Scale Converter</h3>
+          <p>Convert between drawing-measured lengths and real-world distances for common CAD and architectural scales.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field">
+                <label for="sc-scale">Scale (1 : X)</label>
+                <select id="sc-scale">
+                  <option value="1">1:1</option>
+                  <option value="5">1:5</option>
+                  <option value="10">1:10</option>
+                  <option value="20">1:20</option>
+                  <option value="25" selected>1:25</option>
+                  <option value="50">1:50</option>
+                  <option value="100">1:100</option>
+                  <option value="200">1:200</option>
+                  <option value="250">1:250</option>
+                  <option value="500">1:500</option>
+                  <option value="1000">1:1000</option>
+                  <option value="2000">1:2000</option>
+                  <option value="5000">1:5000</option>
+                  <option value="10000">1:10000</option>
+                  <option value="custom">Custom scale</option>
+                </select>
+              </div>
+              <div class="t-field" id="sc-custom-wrap" style="display:none;"><label for="sc-scale-custom">1 : </label><input type="number" id="sc-scale-custom" value="100" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="sc-meas">Measured on drawing</label><input type="number" id="sc-meas" value="25" min="0" step="any"></div>
+              <div class="t-field">
+                <label for="sc-meas-unit">Unit</label>
+                <select id="sc-meas-unit"><option value="mm" selected>mm</option><option value="cm">cm</option><option value="m">m</option><option value="in">inch</option></select>
+              </div>
+              <div class="t-field">
+                <label for="sc-out-unit">Actual in</label>
+                <select id="sc-out-unit"><option value="mm">mm</option><option value="cm">cm</option><option value="m" selected>m</option><option value="km">km</option><option value="ft">ft</option></select>
+              </div>
+            </div>
+            <div class="t-row t-actions">
+              <button type="button" class="btn btn-outline btn-sm" id="sc-reverse">&#8646; Reverse (actual &rarr; drawing)</button>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-result-big" id="sc-out">0</div>
+            <div class="t-result-label" id="sc-out-label">m</div>
+            <div class="t-note" id="sc-note">Actual = measured &times; X</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SECTION PROPERTIES ============ -->
+    <div class="tool-card" id="section-properties">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1"/><circle cx="12" cy="12" r="4.5"/><path d="M12 3v3M12 18v3"/></svg></div>
+        <div>
+          <h3>Section Properties Calculator</h3>
+          <p>Area, moment of inertia, section modulus and radius of gyration for rectangular and circular sections.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field">
+                <label for="sp-shape">Shape</label>
+                <select id="sp-shape"><option value="rect" selected>Rectangle</option><option value="circle">Circle</option></select>
+              </div>
+            </div>
+            <div class="t-row" id="sp-rect">
+              <div class="t-field"><label for="sp-b">Width, b (mm)</label><input type="number" id="sp-b" value="300" min="0" step="any"></div>
+              <div class="t-field"><label for="sp-h">Depth, h (mm)</label><input type="number" id="sp-h" value="450" min="0" step="any"></div>
+            </div>
+            <div class="t-row" id="sp-circ" style="display:none;">
+              <div class="t-field"><label for="sp-d">Diameter, d (mm)</label><input type="number" id="sp-d" value="400" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid t-out-2" id="sp-out"></div>
+            <div class="t-note">Rect: I = bh&sup3;/12, S = bh&sup2;/6 &nbsp;·&nbsp; Circle: I = &pi;d&sup4;/64, S = &pi;d&sup3;/32</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ STEEL QUANTITY ============ -->
+    <div class="tool-card" id="steel-quantity">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V8l8-5 8 5v12"/><path d="M9 20v-4h6v4"/><path d="M9 12h.01M15 12h.01"/></svg></div>
+        <div>
+          <h3>Steel Quantity Estimator</h3>
+          <p>Rough rebar requirement for a concrete volume by member type using typical kg/m&sup3; ranges - for budgeting and BOQ sanity checks only.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field">
+                <label for="sq-type">Member type</label>
+                <select id="sq-type">
+                  <option value="slab">Slab / pavement</option>
+                  <option value="beams">Beams</option>
+                  <option value="columns">Columns</option>
+                  <option value="footings">Footings</option>
+                  <option value="retaining">Retaining walls</option>
+                  <option value="overall" selected>Overall RCC average</option>
+                </select>
+              </div>
+              <div class="t-field"><label for="sq-vol">Concrete volume (m&sup3;)</label><input type="number" id="sq-vol" value="100" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="sq-out"></div>
+            <div class="t-note">Rough planning ranges - final reinforcement requires a design drawing and bar-bending schedule.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ RAMP SLOPE ============ -->
+    <div class="tool-card" id="ramp-slope">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20L20 6"/><path d="M4 20h16"/><path d="M14 10l4 4"/><path d="M6 18l4 4"/></svg></div>
+        <div>
+          <h3>Ramp Slope &amp; Compliance Check</h3>
+          <p>Check a ramp gradient against common accessibility limits (ADA 1:12 and steeper local allowances).</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="rp-rise">Vertical rise (m)</label><input type="number" id="rp-rise" value="1" min="0" step="any"></div>
+              <div class="t-field"><label for="rp-run">Horizontal run (m)</label><input type="number" id="rp-run" value="12" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid t-out-4" id="rp-out"></div>
+            <div class="t-note">ADA / many codes: max 1:12 (8.33%) for accessible ramps; 1:10 and 1:8 only for very short runs.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ EARTHWORK VOLUME ============ -->
+    <div class="tool-card" id="earthwork-volume">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V8l6 4V6l4 3V4l6 3v13"/></svg></div>
+        <div>
+          <h3>Earthwork Volume Calculator</h3>
+          <p>Cut and fill volume between two cross-sections using the average end area method - the standard for roads, site grading and drainage earthworks.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="ew-l">Distance between sections (m)</label><input type="number" id="ew-l" value="20" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="ew-c1">Cut area - section 1 (m&sup2;)</label><input type="number" id="ew-c1" value="3.5" min="0" step="any"></div>
+              <div class="t-field"><label for="ew-c2">Cut area - section 2 (m&sup2;)</label><input type="number" id="ew-c2" value="4.2" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="ew-f1">Fill area - section 1 (m&sup2;)</label><input type="number" id="ew-f1" value="0" min="0" step="any"></div>
+              <div class="t-field"><label for="ew-f2">Fill area - section 2 (m&sup2;)</label><input type="number" id="ew-f2" value="0" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="ew-shrink">Fill shrinkage allowance (%)</label><input type="number" id="ew-shrink" value="10" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="ew-out"></div>
+            <div class="t-note">Average end area: V = L &times; (A1 + A2) / 2. Compacted fill shrinks, so the loose material you need to import is higher than the compacted volume. See the <a href="knowledge-civil.html">civil engineering guide</a> for earthwork practice.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BRICK QUANTITY ============ -->
+    <div class="tool-card" id="brick-quantity">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div>
+        <div>
+          <h3>Brick Quantity Calculator</h3>
+          <p>Number of bricks and mortar volume for a wall, using Pakistani standard brick size (9" x 4.5" x 3") with mortar joints.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="bq-l">Wall length (m)</label><input type="number" id="bq-l" value="10" min="0" step="any"></div>
+              <div class="t-field"><label for="bq-h">Wall height (m)</label><input type="number" id="bq-h" value="3" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="bq-t">Wall thickness</label>
+                <select id="bq-t">
+                  <option value="0.115">Half brick - 4.5"</option>
+                  <option value="0.229" selected>One brick - 9"</option>
+                  <option value="0.343">One and half - 13.5"</option>
+                  <option value="0.457">Two brick - 18"</option>
+                </select>
+              </div>
+              <div class="t-field"><label for="bq-waste">Wastage (%)</label><input type="number" id="bq-waste" value="5" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="bq-ratio">Mortar mix (cement : sand)</label>
+                <select id="bq-ratio">
+                  <option value="5">1 : 4</option>
+                  <option value="6" selected>1 : 6</option>
+                  <option value="7">1 : 7</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="bq-out"></div>
+            <div class="t-note">Rule of thumb: about 500 bricks and 0.3 m&sup3; of mortar per m&sup3; of brickwork (joints included). Bricks counted as 500/m&sup3; nominal, plus wastage. See the <a href="knowledge-civil.html">civil engineering guide</a> for masonry practice.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PLASTER QUANTITY ============ -->
+    <div class="tool-card" id="plaster-quantity">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18M12 3v18"/></svg></div>
+        <div>
+          <h3>Plaster Quantity Calculator</h3>
+          <p>Cement and sand for wall and ceiling plaster by area, thickness and mix ratio - with the dry-volume allowance.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="pq-area">Area to plaster (m&sup2;)</label><input type="number" id="pq-area" value="100" min="0" step="any"></div>
+              <div class="t-field"><label for="pq-thick">Thickness (mm)</label><input type="number" id="pq-thick" value="19" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="pq-ratio">Mix (cement : sand)</label>
+                <select id="pq-ratio">
+                  <option value="3">1 : 3</option>
+                  <option value="4" selected>1 : 4</option>
+                  <option value="5">1 : 5</option>
+                  <option value="6">1 : 6</option>
+                </select>
+              </div>
+              <div class="t-field"><label for="pq-waste">Wastage (%)</label><input type="number" id="pq-waste" value="5" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="pq-out"></div>
+            <div class="t-note">Dry volume = wet volume &times; 1.33 (sand bulking + voids). Cement assumed 1,440 kg/m&sup3;; a 50 kg bag is about 0.0347 m&sup3;.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ASPHALT QUANTITY ============ -->
+    <div class="tool-card" id="asphalt-quantity">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20L20 4"/><path d="M3 20h18"/><path d="M15 6l3 3"/></svg></div>
+        <div>
+          <h3>Asphalt Quantity Calculator</h3>
+          <p>Volume and tonnage of asphalt for roads, driveways and pavements by area and compacted thickness.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="aq-area">Area (m&sup2;)</label><input type="number" id="aq-area" value="500" min="0" step="any"></div>
+              <div class="t-field"><label for="aq-thick">Compacted thickness (mm)</label><input type="number" id="aq-thick" value="50" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="aq-density">Density (kg/m&sup3;)</label><input type="number" id="aq-density" value="2350" min="0" step="any"></div>
+              <div class="t-field"><label for="aq-waste">Wastage (%)</label><input type="number" id="aq-waste" value="5" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="aq-out"></div>
+            <div class="t-note">Typical compacted asphalt density 2,300 - 2,400 kg/m&sup3;. Ordering is usually by tonne; add 4-8% for wastage and tack coat overlap. See <a href="knowledge-civil.html">roads &amp; pavements</a> in the civil guide.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ AGGREGATE & SAND QUANTITY ============ -->
+    <div class="tool-card" id="aggregate-quantity">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
+        <div>
+          <h3>Aggregate &amp; Sand Quantity Calculator</h3>
+          <p>Crush, bajri and sand needed for concrete and mortar by volume or by member quantities.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="ag-vol">Concrete / mortar volume (m&sup3;)</label><input type="number" id="ag-vol" value="10" min="0" step="any"></div>
+              <div class="t-field"><label for="ag-material">Material for</label><select id="ag-material"><option value="conc" selected>Concrete (1:2:4)</option><option value="mortar">Mortar (1:4)</option><option value="pcc">PCC (1:4:8)</option></select></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="ag-waste">Wastage (%)</label><input type="number" id="ag-waste" value="5" min="0" step="any"></div>
+              <div class="t-field"><label for="ag-unit">Output unit</label><select id="ag-unit"><option value="m3" selected>m&sup3;</option><option value="cft">cft</option></select></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="ag-out"></div>
+            <div class="t-note">Uses dry-volume factors: concrete 1.54, mortar 1.33. For 1:2:4 concrete, cement/sand/aggregate are 1/7, 2/7, 4/7 of the dry volume. See <a href="knowledge-construction.html">concrete &amp; masonry</a> in the construction guide.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ RATE ANALYSIS ============ -->
+    <div class="tool-card" id="rate-analysis">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M7 15h4"/></svg></div>
+        <div>
+          <h3>Rate Analysis Calculator</h3>
+          <p>Break a BOQ item into material, labour and plant to justify a rate for extras and new items.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="ra-material">Material cost (Rs)</label><input type="number" id="ra-material" value="45000" min="0" step="any"></div>
+              <div class="t-field"><label for="ra-labour">Labour cost (Rs)</label><input type="number" id="ra-labour" value="18000" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="ra-plant">Plant &amp; equipment (Rs)</label><input type="number" id="ra-plant" value="4000" min="0" step="any"></div>
+              <div class="t-field"><label for="ra-overhead">Overhead &amp; profit (%)</label><input type="number" id="ra-overhead" value="15" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="ra-qty">Item quantity</label><input type="number" id="ra-qty" value="100" min="0.001" step="any"></div>
+              <div class="t-field"><label for="ra-unit">Unit</label><select id="ra-unit"><option value="cft" selected>cft</option><option value="m3">m&sup3;</option><option value="sft">sft</option><option value="kg">kg</option></select></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="ra-out"></div>
+            <div class="t-note">Direct cost = material + labour + plant. Rate = direct cost x (1 + overhead%) / quantity. Overhead usually covers supervision, scaffolding, tools and profit. See <a href="boq-estimation.html">rate analysis service</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ REBAR ESTIMATOR BY MEMBER ============ -->
+    <div class="tool-card" id="rebar-estimator">
+      <div class="tool-head">
+        <div class="svc-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V8h16v12"/><path d="M8 20v-6M12 20v-9M16 20v-6"/></svg></div>
+        <div>
+          <h3>Rebar Estimator by Member</h3>
+          <p>Approximate reinforcement weight for slabs, beams, columns and footings from member dimensions.</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="t-grid">
+          <div class="t-form">
+            <div class="t-row">
+              <div class="t-field"><label for="re-member">Member type</label><select id="re-member"><option value="slab" selected>Slab</option><option value="beam">Beam</option><option value="column">Column</option><option value="footing">Footing</option></select></div>
+              <div class="t-field"><label for="re-vol">Member concrete volume (m&sup3;)</label><input type="number" id="re-vol" value="10" min="0" step="any"></div>
+            </div>
+            <div class="t-row">
+              <div class="t-field"><label for="re-density">Steel density assumption (kg/m&sup3;)</label><input type="number" id="re-density" value="100" min="0" step="any"></div>
+              <div class="t-field"><label for="re-total">Steel unit rate (Rs/kg)</label><input type="number" id="re-total" value="250" min="0" step="any"></div>
+            </div>
+          </div>
+          <div class="t-result">
+            <div class="t-out-grid" id="re-out"></div>
+            <div class="t-note">Reference steel contents per m&sup3; of concrete: slab 70-110 kg, beam 120-180 kg, column 150-220 kg, footing 60-100 kg. Actual depends on design loads, spans and detailing. See <a href="structural-engineering.html">structural design services</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-soft" style="margin-top:44px;" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">FAQ</div>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>How many cement bags are in 1 m&sup3; of M15 (1:2:4) concrete?</h3>
+            <p>About 6.9 bags of 50 kg each (dry volume allowance 1.54, 5% waste). The mix calculator above reports it for any volume and mix.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How much does a 12 mm rebar weigh per metre?</h3>
+            <p>Approximately 0.888 kg/m (using d&sup2;/162, where d is in mm). The rebar calculator covers all common sizes in kg/m, per-bar and totals.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Are these engineering calculators free?</h3>
+            <p>Yes - 100% free, no sign-up, and everything runs in your browser. No files are uploaded anywhere.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I use these results for final design?</h3>
+            <p>These are reference and preliminary tools. Final structural design must follow applicable codes and be checked by a licensed engineer - <a href="contact.html">contact Struc-Arch Pakistan</a> for design support.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How is earthwork volume measured for roads?</h3>
+            <p>By cross-section. Each station gets a measured cross-section showing cut and fill areas; volume between adjacent sections uses the average end area method (V = L &times; (A1 + A2) / 2). Compacted fill shrinks, so the loose material needed is higher than the compacted volume - the earthwork calculator above handles both.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How many bricks are in one m&sup3; of brickwork?</h3>
+            <p>About 500 for Pakistani standard bricks (9" x 4.5" x 3") with mortar joints, plus 0.3 m&sup3; of mortar. A 9" wall needs roughly 115 bricks per square metre of wall face (about 57 for a 4.5" half-brick wall).</p>
+          </div>
+          <div class="faq-item">
+            <h3>How much plaster covers a 50 kg bag of cement?</h3>
+            <p>About 11 m&sup2; at 12 mm thick with a 1:4 mix, and roughly 7 m&sup2; at 19 mm. The plaster calculator above reports exact cement and sand for any area, thickness and mix.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How is asphalt quantity ordered for a road?</h3>
+            <p>By tonne. Multiply the compacted volume by the asphalt density (about 2,350 kg/m&sup3;) and add 4-8% for wastage and overlaps. For a 100 m&sup2; driveway at 50 mm you need roughly 12 tonnes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-bottom:84px;">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Need a design, estimate or certification?</h2>
+            <p>Beyond the free tools - structural design, quantity takeoffs, BOQs and fitness certification from a PMP / LEED-qualified team.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-white" href="contact.html">Start a Project</a>
+            <a class="btn btn-outline" href="products.html">View Packages</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html" style="color:#fff">
+          <img class="brand-logo" src="assets/img/logoo.png" alt="Struc-Arch Pakistan">
+          <span>
+            <span class="brand-name" style="color:#fff">Struc-<span style="color:#e2a79c">Arch</span> Pakistan</span><br>
+            <span class="brand-sub" style="color:#cba49d">Structure &amp; Architecture</span>
+          </span>
+        </a>
+        <p style="margin-top:16px; font-size:0.94rem;">Civil &amp; structural engineering consultancy - design, estimation, certification and project management across Pakistan and internationally.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="knowledge.html">Knowledge</a></li>
+          <li><a href="knowledge-glossary.html">Glossary</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+          <li><a href="local-gujranwala.html">Gujranwala &amp; Punjab</a></li>
+          <li><a href="local-pakistan.html">All Locations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Saad Afzal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="structural-engineering.html">Structural Engineering</a></li>
+          <li><a href="quantity-surveying.html">Quantity Surveying</a></li>
+          <li><a href="boq-estimation.html">BOQ &amp; Cost Estimation</a></li>
+          <li><a href="building-fitness.html">Building Fitness Certification</a></li>
+          <li><a href="claims-eot.html">Construction Claims &amp; EOT</a></li>
+          <li><a href="contractor-billing.html">Contractor Billing &amp; IPC</a></li>
+          <li><a href="construction-supervision.html">Supervision &amp; Project Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> <a href="https://www.google.com/maps?cid=9445766861951528783" target="_blank" rel="noopener">Kacha, Eminabad Road, Gujranwala 52250</a></p>
+        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg> 0310 3330023</p>
+        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg> info@strucarch.com</p>
+        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg> info@strucarchpakistan.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Struc-Arch Pakistan. All rights reserved.</span>
+      <span><a href="https://strucarch.com" target="_blank" rel="noopener">strucarch.com</a> &nbsp;·&nbsp; <a href="https://strucarchpakistan.com" target="_blank" rel="noopener">strucarchpakistan.com</a> &nbsp;·&nbsp; <a href="https://strucarchpakistan.com/portal/verification" target="_blank" rel="noopener">Verification Portal</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/tools.js"></script>
+</body>
+</html>
