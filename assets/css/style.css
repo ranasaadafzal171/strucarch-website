@@ -153,8 +153,8 @@ a:hover { color: var(--primary-dark); }
 .cred { border: 1px solid var(--border); background: #fff; border-radius: 8px; padding: 6px 12px; font-size: 0.8rem; font-weight: 700; color: var(--ink); }
 .cred-pec { border-color: var(--primary); color: var(--primary); }
 .cred-iep { border-color: #0066cc; color: #0066cc; }
-.cred-pmp { border-color: #009999; color: #009999; }
-.cred-leed { border-color: #009900; color: #009900; }
+.cred-pmp { border-color: #007878; color: #007878; }
+.cred-leed { border-color: #007000; color: #007000; }
 .cred-uet { border-color: #660066; color: #660066; }
 
 .hero-card {
@@ -293,7 +293,7 @@ a:hover { color: var(--primary-dark); }
 .cred-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .cred-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; text-align: center; }
 .cred-card .c-badge { width: 44px; height: 44px; margin: 0 auto 12px; border-radius: 50%; background: var(--primary-soft); color: var(--primary); display: grid; place-items: center; font-weight: 800; font-size: 1rem; }
-.cred-card h4 { color: var(--ink); font-size: 0.98rem; }
+.cred-card h3 { color: var(--ink); font-size: 0.98rem; margin: 0; }
 .cred-card p { font-size: 0.8rem; color: var(--ink-soft); margin-top: 4px; }
 
 /* ---------- Gallery ---------- */
